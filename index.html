@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024.10.28_css2</title>
+
+    <style>
+        div {
+            background-color: burlywood;
+            width: 250px;
+            height: 200px;
+            border: 4px, solid, #d34949;
+            margin: 5px;
+            padding: 2%;
+            /* display: inline-block; */
+        }
+
+        .sub{
+
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .sub:hover {
+
+            background-color: coral;
+            opacity: 0.6;
+
+        }
+
+        #div3:hover {
+
+            background-color: aquamarine;
+            opacity: 0.6;
+
+        }
+
+        #div5 {
+
+            /* position: fixed; */
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+
+        }
+
+        #div7 {
+
+            position: absolute;
+            left: 200px;
+            width: 400px;
+            height: 400px;
+            
+        }
+
+        ul {
+
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10px;
+            background-color: rgb(156, 104, 204);
+
+        }
+
+        li {
+
+            display:inline-block;
+
+        }
+
+        table {
+
+            border-collapse: collapse;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>DIV1</div>
+    <div class="sub">DIV2</div>
+    <div id="div3">DIV3</div>
+    <div class="sub">DIV4</div>
+    <div id="div5">DIV5</div>
+    <div class="sub">DIV6</div>
+    <div id="div7">DIV7 <br>
+
+        <img src="images/Avicii_logo.svg.png" alt=""
+        width="200px"
+        style="float: left;"> 
+        아비치는 DJ이자 프로듀서다. 나는 그의 음악을 좋아한다. 그의 음악은 신나면서 감성적이다.
+        그의 대표적인 곡으로는 levels가 있다. 그의 음악을 progressive house라고 부르기도 한다.
+        아비치는 컨트리 음악과 통칭 전자 댄스 음악이라 부르는 장르를 융합시켰다고 볼 수 있다.
+    
+        <Ul>
+
+            <li>levels</li>
+            <li>without you</li>
+
+        </Ul>
+
+        <table border="1px">
+
+            <thead>
+                <th>1</th> <th>2</th> <th>3</th>
+            </thead>
+
+            <tbody>
+                <td>아비치</td> <td>카이고</td> <td>알레소</td>
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+
+        </table>
+    
+    </div>
+    
+    <div style= "border: 5px, dashed, #4f8dc3;"> CSS 태그를 만들어 보자! </div>
+
+    <div>Div1
+        <!-- <h1>마진 테두리 연습</h1> -->
+        <h1>마진 테두리 연습</h1>
+        <li>margin: 테두리 바깥쪽 여백</li>
+        <li>padding: 내용과 테두리 사이의 영역</li>
+        <li>border: 테두리 영역</li>
+    </div>
+    <div style="background-color: antiquewhite;
+                border-style: ridge;
+                border-radius: 10%;">Div2</div>
+    <div>Div3</div>
+    <div>Div4</div>
+    <div>Div5</div>
+
+</body>
+
+</html>
