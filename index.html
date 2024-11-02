@@ -1,143 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
+<!-- my_home_page -->
+
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024.10.28_css2</title>
+    <title>202100960 송민관</title>
 
     <style>
-        div {
-            background-color: burlywood;
-            width: 250px;
-            height: 200px;
-            border: 4px, solid, #d34949;
-            margin: 5px;
-            padding: 2%;
-            /* display: inline-block; */
+        html,
+        body {
+
+            margin: 0;
+            padding: 0;
+            height: 100%;
+
         }
 
-        .sub{
+        header {
 
-            position: relative;
-            top: 10px;
-            left: 10px;
+            width: 100%;
+            height: 15%;
+            background-color: antiquewhite;
+
         }
 
-        .sub:hover {
+        nav_1 {
 
+            width: 100%;
+            height: auto;
+            background-color: rgb(159, 118, 198);
+            float: inline-start;
+            /* clear: both; */
+
+        }
+
+        #nav_1_ul li {
+
+            display: inline-block;
+            margin-left: 2%;
+            margin-right: 2%;
+            font-size: 2vw;
+
+        }
+
+        nav_2 {
+
+            width: 15%;
+            height: 70%;
+            background-color: darksalmon;
+            float: inline-start;
+            /* padding:; */
+
+        }
+
+        section {
+
+            width: 70%;
+            height: auto;
+            background-color: beige;
+            float: left;
+
+        }
+
+        aside {
+
+            width: 15%;
+            height: 70%;
+            background-color: azure;
+            float: left;
+
+        }
+
+        footer {
+
+            width: 100%;
+            height: 10%;
             background-color: coral;
-            opacity: 0.6;
+            float: inline-start;
+            /* clear: both; */
 
         }
 
-        #div3:hover {
+        li:hover {
 
-            background-color: aquamarine;
-            opacity: 0.6;
-
-        }
-
-        #div5 {
-
-            /* position: fixed; */
-            position: absolute;
-            bottom: 100px;
-            right: 100px;
+            background-color: aqua;
 
         }
 
-        #div7 {
+        article {
 
-            position: absolute;
-            left: 200px;
-            width: 400px;
-            height: 400px;
-            
-        }
-
-        ul {
-
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 10px;
-            background-color: rgb(156, 104, 204);
+            background-color: mediumaquamarine;
+            width: 100%;
+            height: 100%;
 
         }
 
-        li {
 
-            display:inline-block;
+        #today_music {
 
-        }
+            background-color: azure;
 
-        table {
+            margin: auto;
 
-            border-collapse: collapse;
 
         }
 
+        .DAW {
+
+            width: auto;
+            height: auto;
+
+            background-color: burlywood;
+
+        }
     </style>
+
 
 </head>
 
+
 <body>
 
-    <div>DIV1</div>
-    <div class="sub">DIV2</div>
-    <div id="div3">DIV3</div>
-    <div class="sub">DIV4</div>
-    <div id="div5">DIV5</div>
-    <div class="sub">DIV6</div>
-    <div id="div7">DIV7 <br>
+    <header>
 
-        <img src="images/Avicii_logo.svg.png" alt=""
-        width="200px"
-        style="float: left;"> 
-        아비치는 DJ이자 프로듀서다. 나는 그의 음악을 좋아한다. 그의 음악은 신나면서 감성적이다.
-        그의 대표적인 곡으로는 levels가 있다. 그의 음악을 progressive house라고 부르기도 한다.
-        아비치는 컨트리 음악과 통칭 전자 댄스 음악이라 부르는 장르를 융합시켰다고 볼 수 있다.
-    
-        <Ul>
+        <hr>
 
-            <li>levels</li>
-            <li>without you</li>
+        <div style="font-size: 2vw;">
 
-        </Ul>
+            <h1 style="display: inline-block;">
+                음악 추천, 나의 관심사 사이트.
+            </h1>
 
-        <table border="1px">
+            <h1 style="display: inline-block; text-align: right; padding-left: 10%;">
+                202100960 송민관
+            </h1>
 
-            <thead>
-                <th>1</th> <th>2</th> <th>3</th>
-            </thead>
 
-            <tbody>
-                <td>아비치</td> <td>카이고</td> <td>알레소</td>
-            </tbody>
+        </div>
 
-            <tfoot>
+        <hr>
 
-            </tfoot>
+    </header>
 
-        </table>
-    
-    </div>
-    
-    <div style= "border: 5px, dashed, #4f8dc3;"> CSS 태그를 만들어 보자! </div>
+    <nav_1>
 
-    <div>Div1
-        <!-- <h1>마진 테두리 연습</h1> -->
-        <h1>마진 테두리 연습</h1>
-        <li>margin: 테두리 바깥쪽 여백</li>
-        <li>padding: 내용과 테두리 사이의 영역</li>
-        <li>border: 테두리 영역</li>
-    </div>
-    <div style="background-color: antiquewhite;
-                border-style: ridge;
-                border-radius: 10%;">Div2</div>
-    <div>Div3</div>
-    <div>Div4</div>
-    <div>Div5</div>
+        <hr>
+
+        <div>
+
+            <ul id="nav_1_ul">
+
+                <li style="margin-left: 15%;"><a href="#home">home!</a></li>
+                <li><a href="#today_music">Today's Music!</a></li>
+                <li><a href="#about_music">About Music!</a></li>
+                <li><a href="#daw_tips">DAW Tips!</a></li>
+                <li><a href="#about_laptop">About Laptop!</a></li>
+
+            </ul>
+
+        </div>
+
+        <hr>
+
+    </nav_1>
+
+    <nav_2>
+
+        <hr>
+
+        <ul>
+
+            <li><a href="">목차 1</a></li>
+            <li><a href="">목차 2</a></li>
+            <li><a href="">목차 3</a></li>
+            <li><a href="">목차 4</a></li>
+
+        </ul>
+
+        <hr>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/American_Coffe_with_milk.JPG/1599px-American_Coffe_with_milk.JPG?20100826163606"
+            alt="American_Coffe_with_milk" width="100%" height="auto">
+
+        <hr>
+
+        <form action="" name="" method="get">
+
+            방명록
+            <br>
+
+            <textarea name="방명록" id="" cols="auto" rows="4" wrap="" placeholder="오늘 하루는 어떠셨나요?">
+
+            </textarea>
+
+            <br>
+
+            <input type="button" value="저장">
+
+        </form>
+
+        <hr>
+
+    </nav_2>
+
+    <section>
+
+        <hr>
+
+        Today's Story.
+
+        <hr>
+
+        <article id="today_music">
+
+            <p>
+                🎼 Today's Music!
+                <br>
+                오늘의 음악.
+
+                <hr>
+
+                <iframe width="99%" height="315px" src="https://www.youtube.com/embed/Lctr21iN_u8?si=x1-zM9ectCaF40vt"
+                    title="YouTube video player" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+            </p>
+
+        </article>
+
+        <article id="about_music">
+            <p>추천 음악/아티스트</p>
+
+            <div>
+
+                <p>
+                    Piano
+
+                <ul>
+
+                    <li>Sereno</li>
+                    <li>Luminia</li>
+                    <li>Tido Kang</li>
+                    <li>Neal K</li>
+                    <li>DUGGY MUSIC</li>
+                    <li>Flaming Heart</li>
+
+                    ...
+
+                </ul>
+
+                </p>
+
+                <p>
+                    EDM
+
+                <ul>
+
+                    <li>Avicii</li>
+                    <li>Kygo</li>
+                    <li>Jay Null</li>
+                    <li>Alan Walker</li>
+                    <li>Marshmello</li>
+
+                    ...
+
+                </ul>
+
+                </p>
+
+            </div>
+
+        </article>
+
+        <article id="daw_tips">
+            <p>작곡 프로그램 팁.</p>
+
+            <div>
+
+                DAW의 종류.
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/69/FL_Studio_11_just_logo.png"
+                        alt="FL_Studio_11_just_logo" width="20%">
+
+                    FL Studio
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/FL_Studio_Mobile_icon.png"
+                        alt="FL_Studio_Mobile_icon" width="20%">
+
+                    FL Studio mobile
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Cakewalk_logo.png" alt="Cakewalk_logo"
+                        width="20%">
+
+                    Sonar cakewalk (now by bandlab)
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/REAPER_DAW_logo.jpg" alt="REAPER_DAW_logo"
+                        width="20%">
+
+                    REAPER by Cockos
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Logic_Pro_icon.png" alt="Logic_Pro_icon"
+                        width="20%">
+
+                    Logic Pro
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Cubase_logo.svg/2880px-Cubase_logo.svg.png"
+                        alt="Cubase_logo" width="20%">
+
+                    CUBASE by Steinberg
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/50/PreSonus_Studio_One_Logo.png"
+                        alt="PreSonus_Studio_One_Logo" width="20%">
+
+                    Studio one by PreSonus
+
+                </p>
+
+                <p class="DAW">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Antu_bitwig-studio.svg/1920px-Antu_bitwig-studio.svg.png"
+                        alt="Antu_bitwig-studio" width="20%">
+
+                    Bitwig Studio
+
+                </p>
+
+
+            </div>
+
+        </article>
+
+        <article id="about_laptop">
+            <p>노트북에 관하여.</p>
+
+            <div>
+
+                <p>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Apple_M1.jpg" alt="Apple_M1"
+                        width="40%">
+
+                    Apple Silicon M Series.
+
+                </p>
+
+            </div>
+
+        </article>
+
+        <hr>
+
+    </section>
+
+    <aside>
+
+        <hr>
+
+        For more story...
+
+        <hr>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+            alt="Python-logo-notext" width="100%">
+
+        <br>
+
+        Life is too short!
+        <br>
+        You need Python!
+
+        <hr>
+
+    </aside>
+
+    <footer>
+
+        # made by min-gwan song. 2024.
+
+    </footer>
+
 
 </body>
+
 
 </html>
