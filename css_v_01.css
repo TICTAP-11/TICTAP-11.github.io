@@ -1,0 +1,108 @@
+
+/* css_v_01.css */
+
+html, body {
+
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+
+}
+
+header {
+
+    width: 100%;
+    height: 15%;
+    background-color: antiquewhite;
+
+}
+
+nav_1 {
+
+    width: 100%;
+    height: auto;
+    background-color: rgb(159, 118, 198);
+    float: inline-start;
+    /* clear: both; */
+
+}
+
+#nav_1_ul li {
+
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 2vw;
+
+}
+
+nav_2 {
+
+    width: 15%;
+    height: 70%;
+    background-color: darksalmon;
+    float: inline-start;
+    /* padding:; */
+
+}
+
+section {
+
+    width: 70%;
+    height: auto;
+    background-color: beige;
+    float: left;
+
+}
+
+aside {
+
+    width: 15%;
+    height: 70%;
+    background-color: azure;
+    float: left;
+
+}
+
+footer {
+
+    width: 100%;
+    height: 10%;
+    background-color: coral;
+    float: inline-start;
+    /* clear: both; */
+
+}
+
+li:hover {
+
+    background-color: aqua;
+
+}
+
+article {
+
+    background-color: mediumaquamarine;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#today_music {
+
+    background-color: azure;
+
+    margin: auto;
+
+
+}
+
+.DAW {
+
+    width: auto;
+    height: auto;
+
+    background-color: burlywood;
+
+}
