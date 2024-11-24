@@ -3,7 +3,7 @@
 <html>
 
 <!-- my_home_page -->
-
+<!-- 202100960_송민관_homepage_v_01.html -->
 
 <head>
 
@@ -12,113 +12,10 @@
     <title>202100960 송민관</title>
 
     <style>
-        html,
-        body {
-
-            margin: 0;
-            padding: 0;
-            height: 100%;
-
-        }
-
-        header {
-
-            width: 100%;
-            height: 15%;
-            background-color: antiquewhite;
-
-        }
-
-        nav_1 {
-
-            width: 100%;
-            height: auto;
-            background-color: rgb(159, 118, 198);
-            float: inline-start;
-            /* clear: both; */
-
-        }
-
-        #nav_1_ul li {
-
-            display: inline-block;
-            margin-left: 2%;
-            margin-right: 2%;
-            font-size: 2vw;
-
-        }
-
-        nav_2 {
-
-            width: 15%;
-            height: 70%;
-            background-color: darksalmon;
-            float: inline-start;
-            /* padding:; */
-
-        }
-
-        section {
-
-            width: 70%;
-            height: auto;
-            background-color: beige;
-            float: left;
-
-        }
-
-        aside {
-
-            width: 15%;
-            height: 70%;
-            background-color: azure;
-            float: left;
-
-        }
-
-        footer {
-
-            width: 100%;
-            height: 10%;
-            background-color: coral;
-            float: inline-start;
-            /* clear: both; */
-
-        }
-
-        li:hover {
-
-            background-color: aqua;
-
-        }
-
-        article {
-
-            background-color: mediumaquamarine;
-            width: 100%;
-            height: 100%;
-
-        }
-
-
-        #today_music {
-
-            background-color: azure;
-
-            margin: auto;
-
-
-        }
-
-        .DAW {
-
-            width: auto;
-            height: auto;
-
-            background-color: burlywood;
-
-        }
+        @import url("css_v_01.css");
     </style>
+
+    <!-- <link rel="stylesheet" href="css_v_01.css" type="text/css"> -->
 
 
 </head>
@@ -144,6 +41,8 @@
         </div>
 
         <hr>
+
+        <audio src=""></audio>
 
     </header>
 
@@ -174,11 +73,11 @@
         <hr>
 
         <ul>
-
-            <li><a href="">목차 1</a></li>
-            <li><a href="">목차 2</a></li>
-            <li><a href="">목차 3</a></li>
-            <li><a href="">목차 4</a></li>
+            <!-- #마크는 현재 html을 나타내는듯함. -->
+            <li><a href="#">목차 1</a></li>
+            <li><a href="#">목차 2</a></li>
+            <li><a href="#">목차 3</a></li>
+            <li><a href="#">목차 4</a></li>
 
         </ul>
 
@@ -204,6 +103,17 @@
 
         </form>
 
+        <!-- time 태그 테스트중 -->
+
+        <time datetime="">11:40</time>
+        11:40
+        <time datetime=""></time>
+
+        <br>
+
+        <!-- <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p> -->
+
         <hr>
 
     </nav_2>
@@ -212,31 +122,36 @@
 
         <hr>
 
-        Today's Story.
+        <h1>Today's Story.</h1>
+
+        <label for="today_percent"> Today's Happy! </label>
+        <meter id="today_percent" min="0" max="100" value="90"></meter>
+
+        <progress> hi </progress>
 
         <hr>
 
         <article id="today_music">
 
             <p>
-                🎼 Today's Music!
-                <br>
-                오늘의 음악.
+            <h2>🎼 Today's Music!</h2>
 
-                <hr>
+            오늘의 음악.
 
-                <iframe width="99%" height="315px" src="https://www.youtube.com/embed/Lctr21iN_u8?si=x1-zM9ectCaF40vt"
-                    title="YouTube video player" frameborder="1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+            <hr>
+
+            <iframe width="99%" height="315px" src="https://www.youtube.com/embed/Lctr21iN_u8?si=x1-zM9ectCaF40vt"
+                title="YouTube video player" frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
 
             </p>
 
         </article>
 
         <article id="about_music">
-            <p>추천 음악/아티스트</p>
+            <h2>추천 음악/아티스트</h2>
 
             <div>
 
@@ -280,7 +195,7 @@
         </article>
 
         <article id="daw_tips">
-            <p>작곡 프로그램 팁.</p>
+            <h2>작곡 프로그램 팁.</h2>
 
             <div>
 
@@ -364,7 +279,7 @@
         </article>
 
         <article id="about_laptop">
-            <p>노트북에 관하여.</p>
+            <h2>노트북에 관하여.</h2>
 
             <div>
 
