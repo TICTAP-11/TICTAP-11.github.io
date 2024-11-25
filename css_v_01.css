@@ -1,8 +1,13 @@
 
 /* css_v_01.css */
 
-html, body {
+html {
+    padding: 0;
+}
 
+body {
+
+    min-height: 100vh;
     margin: 0px;
     padding: 0;
     height: 100%;
@@ -39,7 +44,7 @@ nav_1 {
 nav_2 {
 
     width: 15%;
-    height: 70%;
+    height: 100vh;
     background-color: darksalmon;
     float: inline-start;
     /* padding:; */
@@ -52,13 +57,14 @@ section {
     height: auto;
     background-color: beige;
     float: left;
+    /* overflow: scroll; */
 
 }
 
 aside {
 
     width: 15%;
-    height: 70%;
+    height: 100vh;
     background-color: azure;
     float: left;
 
@@ -104,5 +110,22 @@ article {
     height: auto;
 
     background-color: burlywood;
+
+    clear: both;
+
+}
+
+/* .DAW > p {
+
+    display: inline-block;
+
+} */
+
+figcaption {
+
+    background-color: rgb(38, 35, 35);
+    color: white;
+    padding: 3px;
+    text-align: center;
 
 }
