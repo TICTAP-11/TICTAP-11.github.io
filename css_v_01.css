@@ -3,11 +3,22 @@
 
 html {
     padding: 0;
+    
 }
 
 body {
 
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5fr 7fr 1.5fr;
+    grid-template-rows: 1.5fr auto auto 1fr;
+    grid-template-areas: "header header header"
+                         "nav_1 nav_1 nav_1"
+                         "nav_2 section aside"
+                         "footer footer footer";
+
+    /* gap: 5px; */
+
+    /* min-height: 100vh; */
     margin: 0px;
     padding: 0;
     height: 100%;
@@ -16,18 +27,20 @@ body {
 
 header {
 
+    grid-area: header;
     width: 100%;
-    height: 15%;
+    /* height: 15%; */
     background-color: antiquewhite;
 
 }
 
 nav_1 {
 
+    grid-area: nav_1;
     width: 100%;
-    height: auto;
+    /* height: 15%; */
     background-color: rgb(159, 118, 198);
-    float: inline-start;
+    /* float: inline-start; */
     /* clear: both; */
 
 }
@@ -43,39 +56,43 @@ nav_1 {
 
 nav_2 {
 
-    width: 15%;
-    height: 100vh;
+    grid-area: nav_2;
+    /* width: 15%; */
+    /* height: 100vh; */
     background-color: darksalmon;
-    float: inline-start;
+    /* float: inline-start; */
     /* padding:; */
 
 }
 
 section {
 
-    width: 70%;
-    height: auto;
+    grid-area: section;
+    /* width: 70%; */
+    /* height: auto; */
     background-color: beige;
-    float: left;
+    /* float: left; */
     /* overflow: scroll; */
 
 }
 
 aside {
 
-    width: 15%;
-    height: 100vh;
+    grid-area: aside;
+    /* width: 15%; */
+    /* height: 100vh; */
     background-color: azure;
-    float: left;
+    /* float: left; */
 
 }
 
 footer {
 
-    width: 100%;
-    height: 10%;
+    grid-area: footer;
+    /* width: 100%; */
+    /* height: 10%; */
     background-color: coral;
-    float: inline-start;
+    /* float: inline-start; */
     /* clear: both; */
 
 }
@@ -89,8 +106,8 @@ li:hover {
 article {
 
     background-color: mediumaquamarine;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 
 }
 
