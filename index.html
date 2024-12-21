@@ -17,347 +17,191 @@
 
     <!-- <link rel="stylesheet" href="css_v_01.css" type="text/css"> -->
 
+    <script src="js_v_01.js">
+
+    </script>
 
 </head>
 
 
 <body>
 
-    <header>
+    <!-- ############################################################################################################## -->
 
-        <hr>
-
-        <div style="font-size: 2vw;">
-
-            <h1 style="display: inline-block;">
-                음악 추천, 나의 관심사 사이트.
-            </h1>
-
-            <h1 style="display: inline-block; text-align: right; padding-left: 10%;">
-                202100960 송민관
-            </h1>
-
-
-        </div>
-
-        <hr>
-
-        <audio src=""></audio>
-
-    </header>
-
-    <nav_1>
-
-        <hr>
-
-        <div>
-
-            <ul id="nav_1_ul">
-
-                <li style="margin-left: 15%;"><a href="#home">home!</a></li>
-                <li><a href="#today_music">Today's Music!</a></li>
-                <li><a href="#about_music">About Music!</a></li>
-                <li><a href="#daw_tips">DAW Tips!</a></li>
-                <li><a href="#about_laptop">About Laptop!</a></li>
-
-            </ul>
-
-        </div>
-
-        <hr>
-
-    </nav_1>
+    <!-- ############################################################################################################## -->
 
     <nav_2>
 
-        <hr>
-
-        <ul>
-            <!-- #마크는 현재 html을 나타내는듯함. -->
-            <li><a href="#">목차 1</a></li>
-            <li><a href="#">목차 2</a></li>
-            <li><a href="#">목차 3</a></li>
-            <li><a href="#">목차 4</a></li>
-
-        </ul>
-
-        <hr>
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/American_Coffe_with_milk.JPG/1599px-American_Coffe_with_milk.JPG?20100826163606"
-            alt="American_Coffe_with_milk" width="100%" height="auto">
-
-        <hr>
-
-        <form action="" name="" method="get">
-
-            방명록
-            <br>
-
-            <textarea name="방명록" id="" cols="auto" rows="4" wrap="" placeholder="오늘 하루는 어떠셨나요?">
-
-            </textarea>
-
-            <br>
-
-            <input type="button" value="저장">
-
-        </form>
-
-        <!-- time 태그 테스트중 -->
-
-        <time datetime="">11:40</time>
-        11:40
-        <time datetime=""></time>
-
-        <br>
-
-        <!-- <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
-        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p> -->
-
-        <hr>
-
-    </nav_2>
-
-    <section>
-
-        <hr>
-
-        <h1>Today's Story.</h1>
-
-        <label for="today_percent"> Today's Happy! </label>
-        <meter id="today_percent" min="0" max="100" value="90"></meter>
-
-        <progress> hi </progress>
-
-        <hr>
-
-        <article id="today_music">
-
-            <p>
-            <h2>🎼 Today's Music!</h2>
-
-            오늘의 음악.
+        <div id="nav_2_position_fixer">
 
             <hr>
 
-            <iframe width="99%" height="315px" src="https://www.youtube.com/embed/Lctr21iN_u8?si=x1-zM9ectCaF40vt"
-                title="YouTube video player" frameborder="1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+            <div id="main_logo_1">
 
-            </p>
-
-        </article>
-
-        <article id="about_music">
-            <h2>추천 음악/아티스트</h2>
-
-            <div>
-
-                <p>
-                    Piano
-
-                <ul>
-
-                    <li>Sereno</li>
-                    <li>Luminia</li>
-                    <li>Tido Kang</li>
-                    <li>Neal K</li>
-                    <li>DUGGY MUSIC</li>
-                    <li>Flaming Heart</li>
-
-                    ...
-
-                </ul>
-
-                </p>
-
-                <p>
-                    EDM
-
-                <ul>
-
-                    <li>Avicii</li>
-                    <li>Kygo</li>
-                    <li>Jay Null</li>
-                    <li>Alan Walker</li>
-                    <li>Marshmello</li>
-
-                    ...
-
-                </ul>
-
-                </p>
+                TICTAP's Square World
 
             </div>
 
-        </article>
+            <!-- <script>
+            document.querySelector('body').style.backgroundColor = 'white';
+        </script>
 
-        <article id="daw_tips">
-            <h2>작곡 프로그램 팁.</h2>
+        <input type="button" value="change theme color" onclick="
+            
+        if (document.querySelector('body').style.backgroundColor == 'white') {
+            document.querySelector('body').style.backgroundColor = 'black'
+            document.querySelector('body').style.color = 'white'
+        }
+        else {
+            document.querySelector('body').style.backgroundColor = 'white'
+            document.querySelector('body').style.color = 'black'
+            };
 
-            <div>
+            //document.write(alert('clicked'));
 
-                <h3> DAW의 종류. </h3>
+        " style="width: 100%;"></input> -->
 
-                <br>
+            <!-- <input type="button"
+                onclick="alert(document.getElementById(section_iframe_1).contentWindow.document.getElementById(current_iframe_src))"> -->
 
-                <div class="DAW" style="display: inline-block; background-color: burlywood;">
-                    div와 p 태그의 차이를 다시 생각해 보자. 여기를 p 태그로 하면 배경 색깔 적용이 불가함. 이유는???
+
+            <input type="button" value="change theme color" onclick="change_theme()" style="width: 100%;"></input>
+
+            <!-- #마크는 현재 html을 나타내는듯함. -->
+
+            <script>
+                // 다른 자바 스크립트 파일에서 동일한 이름 변수 사용 중.
+                // let current_iframe_src = document.getElementById("id_section_frame_1").src;
+                // let current_iframe_src = document.getElementById("test").contentWindow.document.location.href;
+                // alert(current_iframe_src);
+
+            </script>
+
+            <!-- <fieldset style="padding: 0%;"> -->
+
+                <legend><span><strong>| Main Menu</strong></span></legend>
+
+                <ul>
+
+                    <!-- <li><a href="#home">home!</a></li>
+                <li><a href="#today_music">Today's Music!</a></li>
+                <li><a href="#about_music">About Music!</a></li>
+                <li><a href="#daw_tips">DAW Tips!</a></li>
+                <li><a href="#about_laptop">About Laptop!</a></li> -->
+
+                    <li>
+                        <a href="./home!.html" onclick="set_iframe_src_index()" target="section_iframe_1">home!</a>
+                    </li>
+                    <li><a href="./todays_music!.html" id="test1" target="section_iframe_1">Today's Music!</a></li>
+                    <li><a href="./about_music!.html" target="section_iframe_1">About Music!</a></li>
+                    <li><a href="./daw_tips!.html" target="section_iframe_1">DAW Tips!</a></li>
+                    <li><a href="./about_laptop!.html" target="section_iframe_1">About Laptop!</a></li>
+
+                </ul>
+
+            <!-- </fieldset> -->
+
+            <hr>
+
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/American_Coffe_with_milk.JPG/1599px-American_Coffe_with_milk.JPG?20100826163606"
+            alt="American_Coffe_with_milk" width="100%" height="auto"> -->
+
+            <fieldset style="width: 60%;">
+
+                <legend>Music Player</legend>
+
+                <img src="./images/American_Coffe_with_milk.JPG" alt="American_Coffe_with_milk" width="100%"
+                    height="auto">
+
+                <audio src="./audios/TICTAP - when a sprout grows up to little tree.mp3" controls loop autoplay">브라우저가
+                    오디오 태그를 지원하지 않습니다.</audio>
+            </fieldset>
+            <hr>
+
+            <!-- time 태그 테스트중 -->
+
+            <!-- <time datetime="">11:40</time>
+        11:40
+        <time datetime=""></time> -->
+
+            <br>
+
+            <!-- <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p> -->
+
+            <hr>
+
+            <div id="clock1_div">
+                <h2 id="clock1">| -- : -- : -- </h2>
+            </div>
+            <hr>
+            <div id="clock2_div">
+                <h2 id="clock2">| ---- 년, -- 월, -- 일. </h2>
+            </div>
+
+            <script>
+
+                function setClock() {
+
+                    let now = new Date();
+                    let s1 = '| ' + now.getHours() + " : " + now.getMinutes() + " : " + now.getSeconds();
+                    document.getElementById("clock1").innerHTML = s1;
+
+                    let s2 = '| ' + now.getFullYear() + " 년, " + (now.getMonth() + 1) + " 월, " + now.getDate() + " 일.";
+                    document.getElementById("clock2").innerHTML = s2;
+
+                    setTimeout("setClock()", 1000);
+
+                }
+
+                setClock();
+
+            </script>
+
+            <hr>
+
+            <form action="" , name="" , method="get" , style="width: 100%;">
+
+                <fieldset>
+
+                    <legend>| 방명록</legend>
                     <br>
-                <figure style="float: inline-start; width: auto">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/69/FL_Studio_11_just_logo.png"
-                        alt="FL_Studio_11_just_logo" width="100%">
-                    <figcaption>
-                        FL Studio
-                    </figcaption>
-                </figure>
 
-                FL Studio 는 Image-Line 사의 프로그램으로,
-                Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                FL Studio 는 Image-Line 사의 프로그램으로,
-                Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                FL Studio 는 Image-Line 사의 프로그램으로,
-                Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                FL Studio 는 Image-Line 사의 프로그램으로,
-                Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                
+                    <textarea name="방명록" id="" cols="auto" rows="4" wrap="" placeholder="오늘 하루는 어떠셨나요?" ,
+                        style="width: 100%; resize: none;"></textarea>
 
-                <p style="float: left; background-color: burlywood;">
-                    FL Studio 는 Image-Line 사의 프로그램으로,
-                    Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                    FL Studio 는 Image-Line 사의 프로그램으로,
-                    Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                    FL Studio 는 Image-Line 사의 프로그램으로,
-                    Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                    FL Studio 는 Image-Line 사의 프로그램으로,
-                    Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
-                </p>
-                <!-- <p style="display: inline-block;">FL studio 는 </p>
-                    <p style="display: inline-block;">테스트.</p>  -->
+                    <br>
 
-            </div>
+                    <input type="button" value="저장">
 
-                <p class="DAW">
+                </fieldset>
 
-                <figure>
+            </form>
 
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/FL_Studio_Mobile_icon.png"
-                            alt="FL_Studio_Mobile_icon" width="20%">
+            <hr>
 
-                        <figcaption style="width: 20%;">
-                            FL Studio mobile
-                        </figcaption>
-                    </div>
+        </div>
 
-                </figure>
+    </nav_2>
 
-                </p>
+    <!-- ############################################################################################################## -->
 
-                <p class="DAW">
-
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Cakewalk_logo.png" alt="Cakewalk_logo"
-                        width="20%">
-
-                    Sonar cakewalk (now by bandlab)
-
-                </p>
-
-                <p class="DAW">
-
-                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/REAPER_DAW_logo.jpg" alt="REAPER_DAW_logo"
-                        width="20%">
-
-                    REAPER by Cockos
-
-                </p>
-
-                <p class="DAW">
-
-                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Logic_Pro_icon.png" alt="Logic_Pro_icon"
-                        width="20%">
-
-                    Logic Pro
-
-                </p>
-
-                <p class="DAW">
-
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Cubase_logo.svg/2880px-Cubase_logo.svg.png"
-                        alt="Cubase_logo" width="20%">
-
-                    CUBASE by Steinberg
-
-                </p>
-
-                <p class="DAW">
-
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/50/PreSonus_Studio_One_Logo.png"
-                        alt="PreSonus_Studio_One_Logo" width="20%">
-
-                    Studio one by PreSonus
-
-                </p>
-
-                <p class="DAW">
-
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Antu_bitwig-studio.svg/1920px-Antu_bitwig-studio.svg.png"
-                        alt="Antu_bitwig-studio" width="20%">
-
-                    Bitwig Studio
-
-                </p>
+    <!-- ############################################################################################################## -->
 
 
-            </div>
+    <section>
 
-        </article>
+        <div style="height: 100%; width: 100%;">
 
-        <article id="about_laptop">
+            <!-- scrolling = "no" -->
+            <iframe src="./home!.html" name="section_iframe_1" id="id_section_iframe_1" frameborder="0" width="100%"
+                height="100%"></iframe>
 
-            <h2>노트북에 관하여.</h2>
-
-            <div>
-
-                <p>
-
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Apple_M1.jpg" alt="Apple_M1"
-                        width="40%">
-
-                    Apple Silicon M Series.
-
-                </p>
-
-            </div>
-
-        </article>
-
-        <hr>
+        </div>
 
     </section>
 
-    <aside>
 
-        <hr>
-
-        For more story...
-
-        <hr>
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
-            alt="Python-logo-notext" width="100%">
-
-        <br>
-
-        Life is too short!
-        <br>
-        You need Python!
-
-        <hr>
-
-    </aside>
 
     <footer>
 
