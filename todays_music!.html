@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url("css_v_01.css");
+    </style>
+
+    <style>
+        body {
+
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header header"
+                "nav_1 nav_1"
+                "section aside";
+
+            /* gap: 5px; */
+
+            /* min-height: 100vh; */
+            margin: 0px;
+            padding: 0;
+            height: 100%;
+
+            background-color: beige;
+
+            overscroll-behavior: auto;
+
+        }
+
+        /* section {
+
+            background-color: beige;
+
+            margin-left: 1%;
+            margin-right: 1%;
+
+        } */
+    </style>
+
+    <script src="js_v_01.js">
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <header id="home">
+
+        <hr>
+
+        <div style="font-size: 2vw;">
+
+            <h1 style="display: inline-block;">
+                | 음악 추천, 나의 관심사 사이트.
+            </h1>
+
+            <h1 style="display: inline-block; text-align: right; padding-left: 10%;">
+                202100960 송민관
+            </h1>
+
+
+        </div>
+
+        <hr>
+
+        <!-- <audio src=""></audio> -->
+
+    </header>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <!-- <div> -->
+
+    <nav_1 id="nav_1_position_fixer" style="z-index: 1;">
+
+        <!-- <div id="nav_1_position_fixer"> -->
+
+        <!-- <hr> -->
+
+        <div>
+            <fieldset style="margin-bottom: 0.5rem; padding: 0.1%;">
+
+                <legend>| Side Menu</legend>
+
+                <ul id="nav_1_ul">
+
+                    <li><a href="#home">home!</a></li>
+                    <li><a href="#today_music">Today's Music!</a></li>
+                    <li><a href="#today_music_2">추천 음악/아티스트</a></li>
+                    <li><a href="#today_music_3">아티스트 소개</a></li>
+                    <li><a href="#today_music_4">감상 소감</a></li>
+
+                    <!-- <li><button onclick="set_iframe_src_index()"></button></li> -->
+
+                </ul>
+
+                <!-- <script>
+
+                function set_iframe_src_index() {
+
+                    current_iframe_src = 1;
+
+                }
+
+            </script> -->
+            </fieldset>
+
+        </div>
+
+        <!-- <hr> -->
+
+        <!-- </div> -->
+
+    </nav_1>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <section>
+
+        </div>
+
+        <hr>
+
+        <article id="today_music" style="margin: 1%;">
+
+            <div>
+
+                <div class="title_shadow">
+                    <h2>🎼 Today's Music!</h2>
+                </div>
+
+
+                오늘의 음악.
+
+                <hr>
+
+                <iframe width="99%" height="315px" src="https://www.youtube.com/embed/Lctr21iN_u8?si=x1-zM9ectCaF40vt"
+                    title="YouTube video player" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </article>
+
+        <!-- <br> -->
+
+        <article id="today_music_2">
+
+            <div class="title_shadow">
+                <div style="display: inline-block; grid-area: title_1;">
+                    <h2>| 추천 음악/아티스트</h2>
+                </div>
+                <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                    <!-- <input type="button" onclick="window.open('./about_music!.html', '_self')"
+                        title="About Music! 페이지로 이동!" value="자세히 알아보기 >"
+                        style="height:50%; opacity: 0.9; margin: 1%;"></input> -->
+                </div>
+            </div>
+
+            <div style="display: grid;
+                    grid-template-columns: 5fr 0.25fr 4fr;
+                    grid-template-rows: auto auto;
+                    grid-template-areas: 'number_1_1 . img_viewer_1'
+                                         'number_1_2 . img_viewer_2';">
+
+                <div style="grid-area: number_1_1;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <p>
+                            | Piano
+                        </p>
+
+                        <ul>
+
+                            <li onmouseover="change_viewer_1_src('./images/musicians/sereno_profile.jpg')">Sereno</li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/luminia_profile.jpg')">Luminia</li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/tido_kang_profile.jpg')">Tido Kang
+                            </li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/neal_k_profile.jpg')">Neal K</li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/duggy_profile.jpg')">DUGGY MUSIC
+                            </li>
+                            <li onmouseover="change_viewer_1_src('./images/default_image.png')">Flaming Heart</li>
+
+                            ...
+
+                        </ul>
+
+                    </fieldset>
+                </div>
+
+                <div style="grid-area: number_1_2;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <p>
+                            | EDM
+                        </p>
+
+                        <ul>
+
+                            <li onmouseover="change_viewer_2_src('./images/musicians/avicii_profile.jpg')">Avicii</li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/kygo_profile.jpg')">Kygo</li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/jay_null_profile.jpg')">Jay Null
+                            </li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/alan_walker_profile.jpg')">Alan
+                                Walker
+                            </li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/marshmello_profile.jpg')">
+                                Marshmello
+                            </li>
+
+                            ...
+
+                        </ul>
+
+                    </fieldset>
+
+                </div>
+
+                <div style="grid-area: img_viewer_1; align-items: center;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <legend>Musician profile</legend>
+                        <img src="./images/musicians/sereno_profile.jpg" alt="Musician_Profile"
+                            style="width: 99%; height: 99%; border-radius: 0.5rem;" id="id_img_viewer_1">
+                    </fieldset>
+
+                </div>
+
+                <div style="grid-area: img_viewer_2; align-items: center;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <legend>Musician profile</legend>
+                        <img src="./images/musicians/avicii_profile.jpg" alt="Musician_Profile"
+                            style="width: 99%; height: 99%; border-radius: 0.5rem;" id="id_img_viewer_2">
+                    </fieldset>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article id="today_music_3">
+
+            <div class="title_shadow">
+                <div style="display: inline-block; grid-area: title_1;">
+                    <h2>| 아티스트 소개.</h2>
+                </div>
+                <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                    <!-- <input type="button" onclick="window.open('./daw_tips!.html', '_self')" title="DAW Tips! 페이지로 이동!"
+                        value="자세히 알아보기 >" style="height:50%; opacity: 0.9; margin: 1%;"></input> -->
+                </div>
+            </div>
+
+            <div>
+
+                <table border="1" style="width: 100%; border-radius: 0.5rem;">
+                    <thead>
+                        <tr>
+                            <th>이미지</th>
+                            <th>이름</th>
+                            <th>장르</th>
+                            <th>특이 사항</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://youtube.com/@sereno?feature=shared">
+                                    <img src="https://yt3.googleusercontent.com/MOIqA5xUeGYhd8-fH70m_ZYAGtozHBP1daZa-XW5Dud4AzumFyBeAx6E9rm13EzQd4UxOpXD=s160-c-k-c0x00ffffff-no-rj"
+                                        alt="세레노 이미지" width="150" height="150" title="Sereno 사이트 방문하기">
+                                </a>
+                            </td>
+                            <td>Sereno</td>
+                            <td>piano</td>
+                            <td>어쩌면 가장 먼저 좋아한 piano music</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://youtube.com/@luann_kim?feature=shared">
+                                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_m_Je_sNFOIs9OOa4rarIvK7MadOibCGLgBoXbLsVqV8pQ=s160-c-k-c0x00ffffff-no-rj"
+                                        alt="루미니아 이미지" width="150" height="150" title="Luminia 사이트 방문하기">
+                                </a>
+                            </td>
+                            <td>Luminia</td>
+                            <td>piano</td>
+                            <td>앱 만들었던...</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>기억의 파편들...</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+
+            </div>
+
+        </article>
+
+        <article id="today_music_4">
+
+            <div>
+
+                <div class="title_shadow">
+                    <div style="display: inline-block; grid-area: title_1;">
+                        <h2>| 감상 소감.</h2>
+                    </div>
+                    <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                        <!-- <input type="button" onclick="window.open('./about_laptop!.html', '_self')"
+                            title="About Laptop! 페이지로 이동!" value="자세히 알아보기 >"
+                            style="height:50%; opacity: 0.9; margin: 1%;"></input> -->
+                    </div>
+                </div>
+
+                <div class="notebook">
+
+                    <div>
+
+                        &nbsp;&nbsp; 생각해 보면, 중학교 시절에 피아노 곡들을 많이 접하기 시작했던 것 같습니다.
+                        뉴에이지 라고도 불렸죠. 피아노 솔로, 또는 드럼이나 String 악기와의 간단한 조합이지만, 마음을 울리는 뭔가가 있었던 것 같습니다.
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <hr>
+    </section>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <aside>
+
+        <hr>
+
+        For more story...
+
+        <hr>
+
+        <!-- <input type="button" onclick="alert(current_iframe_src)"> -->
+
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+            alt="Python-logo-notext" width="100%"> -->
+
+
+        <fieldset>
+
+            <legend>Python</legend>
+
+            <input type="image" src="./images/Python-logo-notext.svg.png" alt="Python-logo-notext" width="100%"
+                onclick="window.open('https://www.python.org/', '_blank')" title="파이썬 공식 페이지로 가기!">
+
+            <!-- <img src="./images/Python-logo-notext.svg.png" alt="Python-logo-notext" width="100%"> -->
+
+            <br>
+            Life is too short!
+            <br>
+            You need Python!
+        </fieldset>
+
+        <fieldset>
+
+            <legend>HTML5</legend>
+
+            <img src="./images/HTML5_logo_and_wordmark.svg.png" alt="HTML5_logo_and_wordmark" width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>CSS3</legend>
+
+            <img src="./images/CSS3_logo_and_wordmark.svg.png" alt="CSS3_logo_and_wordmark" width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>JavaScript</legend>
+
+            <img src="./images/Unofficial_JavaScript_logo_2.svg.png" alt="Unofficial_JavaScript_logo_2" width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Java</legend>
+
+            <img src="./images/Java_programming_language_logo.svg.png" alt="Java_programming_language_logo"
+                width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>C</legend>
+
+            <img src="./images/The_C_Programming_Language_logo.svg.png" alt="The_C_Programming_Language_logo"
+                width="100%">
+
+        </fieldset>
+
+        <hr>
+
+    </aside>
+
+    <!-- </div> -->
+
+</body>
+
+</html>

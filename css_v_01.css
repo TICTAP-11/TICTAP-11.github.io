@@ -1,20 +1,20 @@
-
 /* css_v_01.css */
+
+/*202100960 송민관의 css 파일*/
 
 html {
     padding: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
 }
 
 body {
 
     display: grid;
-    grid-template-columns: 1.5fr 7fr 1.5fr;
-    grid-template-rows: 1.5fr auto auto 1fr;
-    grid-template-areas: "header header header"
-                         "nav_1 nav_1 nav_1"
-                         "nav_2 section aside"
-                         "footer footer footer";
+    grid-template-columns: 1.5fr 8.5fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "nav_2 section"
+        "footer footer";
 
     /* gap: 5px; */
 
@@ -22,6 +22,12 @@ body {
     margin: 0px;
     padding: 0;
     height: 100%;
+    width: 100%;
+
+    background-color: beige;
+
+    overscroll-behavior: none;
+
 
 }
 
@@ -43,15 +49,54 @@ nav_1 {
     /* float: inline-start; */
     /* clear: both; */
 
+    /* justify-content: space-evenly;*/
+
 }
+
+/* #nav_1_ul {
+
+    justify-content: space-evenly;
+
+} */
 
 #nav_1_ul li {
 
     display: inline-block;
     margin-left: 2%;
     margin-right: 2%;
+
+    /* height: 100%; */
+
     font-size: 2vw;
 
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.214);
+
+    transition: font-size 1s;
+
+}
+
+#nav_1_ul li:hover {
+
+    transform: translate(-5px, -5px);
+    font-size: 150%;
+}
+
+#nav_1_position_fixer {
+
+    -webkit-position: sticky;
+    position: sticky;
+    top: 0px;
+    /* right: 85.5%; */
+    /* padding-left: 0.5%; */
+
+}
+
+a:visited {
+    color: #551A8B
+}
+
+a:link {
+    color: #551A8B
 }
 
 nav_2 {
@@ -61,9 +106,66 @@ nav_2 {
     /* height: 100vh; */
     background-color: darksalmon;
     /* float: inline-start; */
-    /* padding:; */
+
+    /* overflow: auto; */
 
 }
+
+nav_2>#nav_2_position_fixer {
+
+    -webkit-position: sticky;
+    position: sticky;
+    top: 10px;
+    right: 85.5%;
+    padding-left: 0.5%;
+
+}
+
+#clock1,
+#clock2 {
+
+    color: transparent;
+
+    background-image: linear-gradient(to top, rgba(26, 255, 0, 0.774), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* text-shadow: 0.2rem 0.2rem 0.1rem black; */
+
+}
+
+#clock1_div,
+#clock2_div {
+
+    background-image: linear-gradient(20deg, white, transparent 60%);
+    padding-bottom: 0.01rem;
+}
+
+#main_logo_1 {
+
+    text-decoration-line: overline underline;
+
+    align-items: center;
+    text-align: center;
+
+}
+
+.title_shadow {
+
+    background-image: linear-gradient(to bottom right, white, transparent 40%);
+    padding-bottom: 0.01rem;
+
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title_1 title_2";
+
+}
+/* .title_shadow > div {
+
+} */
 
 section {
 
@@ -74,6 +176,9 @@ section {
     /* float: left; */
     /* overflow: scroll; */
 
+    /* margin-left: 1%;
+    margin-right: 1%; */
+
 }
 
 aside {
@@ -83,6 +188,8 @@ aside {
     /* height: 100vh; */
     background-color: azure;
     /* float: left; */
+
+    padding-right: 1%;
 
 }
 
@@ -97,9 +204,25 @@ footer {
 
 }
 
+/* nav>ul {} */
+
+li {
+
+    transition: font-size 0.5s;
+
+}
+
 li:hover {
 
     background-color: aqua;
+    font-size: 150%;
+
+}
+
+li:active {
+
+    background-color: rgb(6, 221, 221);
+    font-size: 150%;
 
 }
 
@@ -109,15 +232,27 @@ article {
     /* width: 100%;
     height: 100%; */
 
+    /* margin-left: 1%;
+    margin-right: 1%; */
+
+    margin: 1%;
+
+    padding: 0.5%;
+
+    border-radius: 0.5rem;
+
+    scroll-margin-top: 6.5rem;
+
 }
 
+article .DAW {
 
-#today_music {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: justify;
+    margin-top: 1rem;
 
-    background-color: azure;
-
-    margin: auto;
-
+    display: inline-block;
 
 }
 
@@ -132,11 +267,88 @@ article {
 
 }
 
-/* .DAW > p {
+.DAW>figure {
+
+    float: inline-start;
+    width: 15%;
+    height: auto;
+    background-color: burlywood;
+
+}
+
+.DAW>figure>img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+article .notebook {
+
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: justify;
+    margin-top: 1rem;
 
     display: inline-block;
 
-} */
+}
+
+.notebook {
+
+    width: 98%;
+    height: auto;
+
+    background-color: burlywood;
+
+    clear: both;
+
+}
+
+.notebook>figure {
+
+    float: inline-start;
+    width: 15%;
+    height: auto;
+    background-color: burlywood;
+
+}
+
+.notebook>figure>img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+article[id="today_music"] {
+
+    background-color: azure;
+
+    margin: auto;
+
+}
+article[id="about_music_1"] {
+
+    background-color: azure;
+
+    margin: auto;
+
+}
+article[id="daw_tips_1"] {
+
+    background-color: azure;
+
+    margin: auto;
+
+}
+article[id="about_laptop_1"] {
+
+    background-color: azure;
+
+    margin: auto;
+
+}
 
 figcaption {
 
@@ -145,4 +357,17 @@ figcaption {
     padding: 3px;
     text-align: center;
 
+    width: auto;
+    height: auto;
+
+}
+
+.button_1 {
+
+    padding: 1%;
+    border-radius: 0.2rem;
+    border-width: 0.2rem;
+    border-style: dotted;
+
+    background-color: coral;
 }

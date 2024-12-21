@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url("css_v_01.css");
+    </style>
+
+    <style>
+        body {
+
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header header"
+                "nav_1 nav_1"
+                "section aside";
+
+            /* gap: 5px; */
+
+            /* min-height: 100vh; */
+            margin: 0px;
+            padding: 0;
+            height: 100%;
+
+            background-color: beige;
+
+            overscroll-behavior: auto;
+
+        }
+
+        /* section {
+
+            background-color: beige;
+
+            margin-left: 1%;
+            margin-right: 1%;
+
+        } */
+    </style>
+
+    <script src="js_v_01.js">
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <header id="home">
+
+        <hr>
+
+        <div style="font-size: 2vw;">
+
+            <h1 style="display: inline-block;">
+                | 음악 추천, 나의 관심사 사이트.
+            </h1>
+
+            <h1 style="display: inline-block; text-align: right; padding-left: 10%;">
+                202100960 송민관
+            </h1>
+
+
+        </div>
+
+        <hr>
+
+        <!-- <audio src=""></audio> -->
+
+    </header>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <!-- <div> -->
+
+    <nav_1 id="nav_1_position_fixer" style="z-index: 1;">
+
+        <!-- <div id="nav_1_position_fixer"> -->
+
+        <!-- <hr> -->
+
+        <div>
+            <fieldset style="margin-bottom: 0.5rem; padding: 0.1%;">
+
+                <legend>| Side Menu</legend>
+
+                <ul id="nav_1_ul">
+
+                    <li><a href="#home">home!</a></li>
+                    <li><a href="#today_music">Today's Music!</a></li>
+                    <li><a href="#about_music">About Music!</a></li>
+                    <li><a href="#daw_tips">DAW Tips!</a></li>
+                    <li><a href="#about_laptop">About Laptop!</a></li>
+
+                    <!-- <li><button onclick="set_iframe_src_index()"></button></li> -->
+
+                </ul>
+
+                <!-- <script>
+
+                function set_iframe_src_index() {
+
+                    current_iframe_src = 1;
+
+                }
+
+            </script> -->
+            </fieldset>
+
+        </div>
+
+        <!-- <hr> -->
+
+        <!-- </div> -->
+
+    </nav_1>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <section>
+
+
+        <hr>
+
+        <div style="margin: 1%;">
+
+            <div class="title_shadow">
+                <h1>Today's Story.</h1>
+            </div>
+
+            <label for="today_percent"> Today's Happy! </label>
+            <meter id="today_percent" min="0" max="100" value="90" style="z-index: -1;"></meter>
+
+            <progress> hi </progress>
+
+            <br>
+
+            <h3>송민관이 직접 만든 배틀쉽 웹게임 하러가기. (준비중..)</h3>
+
+            <div class="button_1">
+                <img src="./images/P_videogame_controller_blue.png" alt="P_videogame_controller_blue"
+                    style="width: 2rem; height: 2rem; margin: 0.5rem; padding: 0%; display: inline-block; vertical-align: middle;">
+
+                <button id="game_start_1"
+                    style="border-width: 0.2rem; border-style: double; border-color: red; padding: 0.5rem;"
+                    onclick="change_theme()" onmouseover="onmmouseover_1()" onmouseout="onmouseout_1()">게임 시작!</button>
+
+
+                <script>
+
+                    function onmmouseover_1() {
+
+                        document.getElementById("game_start_1").style.borderStyle = "outset";
+
+                    }
+
+                    function onmouseout_1() {
+
+                        document.getElementById("game_start_1").style.borderStyle = "double";
+
+                    }
+
+                </script>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <article id="today_music" style="margin: 1%;">
+
+            <div>
+
+                <div class="title_shadow">
+                    <div style="display: inline-block; grid-area: title_1;">
+                        <h2>🎼 Today's Music!</h2>
+                    </div>
+                    <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                        <input type="button" onclick="window.open('./todays_music!.html', '_self')"
+                            title="Today's Music! 페이지로 이동!" value="자세히 알아보기 >" style = "height:50%; opacity: 0.9; margin: 1%;"></input>
+                    </div>
+                </div>
+
+                오늘의 음악.
+
+                <hr>
+
+                <iframe width="99%" height="315px" src="https://www.youtube.com/embed/Lctr21iN_u8?si=x1-zM9ectCaF40vt"
+                    title="YouTube video player" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </article>
+
+        <!-- <br> -->
+
+        <article id="about_music">
+
+            <div class="title_shadow">
+                <div style="display: inline-block; grid-area: title_1;">
+                    <h2>| 추천 음악/아티스트</h2>
+                </div>
+                <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                    <input type="button" onclick="window.open('./about_music!.html', '_self')"
+                        title="About Music! 페이지로 이동!" value="자세히 알아보기 >" style = "height:50%; opacity: 0.9; margin: 1%;"></input>
+                </div>
+            </div>
+
+            <div style="display: grid;
+                    grid-template-columns: 5fr 0.25fr 4fr;
+                    grid-template-rows: auto auto;
+                    grid-template-areas: 'number_1_1 . img_viewer_1'
+                                         'number_1_2 . img_viewer_2';">
+
+                <div style="grid-area: number_1_1;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <p>
+                            | Piano
+                        </p>
+
+                        <ul>
+
+                            <li onmouseover="change_viewer_1_src('./images/musicians/sereno_profile.jpg')">Sereno</li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/luminia_profile.jpg')">Luminia</li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/tido_kang_profile.jpg')">Tido Kang
+                            </li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/neal_k_profile.jpg')">Neal K</li>
+                            <li onmouseover="change_viewer_1_src('./images/musicians/duggy_profile.jpg')">DUGGY MUSIC
+                            </li>
+                            <li onmouseover="change_viewer_1_src('./images/default_image.png')">Flaming Heart</li>
+
+                            ...
+
+                        </ul>
+
+                    </fieldset>
+                </div>
+
+                <div style="grid-area: number_1_2;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <p>
+                            | EDM
+                        </p>
+
+                        <ul>
+
+                            <li onmouseover="change_viewer_2_src('./images/musicians/avicii_profile.jpg')">Avicii</li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/kygo_profile.jpg')">Kygo</li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/jay_null_profile.jpg')">Jay Null
+                            </li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/alan_walker_profile.jpg')">Alan
+                                Walker
+                            </li>
+                            <li onmouseover="change_viewer_2_src('./images/musicians/marshmello_profile.jpg')">
+                                Marshmello
+                            </li>
+
+                            ...
+
+                        </ul>
+
+                    </fieldset>
+
+                </div>
+
+                <div style="grid-area: img_viewer_1; align-items: center;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <legend>Musician profile</legend>
+                        <img src="./images/musicians/sereno_profile.jpg" alt="Musician_Profile"
+                            style="width: 99%; height: 99%; border-radius: 0.5rem;" id="id_img_viewer_1">
+                    </fieldset>
+
+                </div>
+
+                <div style="grid-area: img_viewer_2; align-items: center;">
+
+                    <fieldset style="height: 80%; border-radius: 0.5rem; border-style: groove; border-width: 1rem; 
+                    align-items: center; padding: 1%; background-color:thistle;">
+
+                        <legend>Musician profile</legend>
+                        <img src="./images/musicians/avicii_profile.jpg" alt="Musician_Profile"
+                            style="width: 99%; height: 99%; border-radius: 0.5rem;" id="id_img_viewer_2">
+                    </fieldset>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article id="daw_tips">
+
+            <div class="title_shadow">
+                <div style="display: inline-block; grid-area: title_1;">
+                    <h2>| 작곡 프로그램 팁.</h2>
+                </div>
+                <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                    <input type="button" onclick="window.open('./daw_tips!.html', '_self')"
+                        title="DAW Tips! 페이지로 이동!" value="자세히 알아보기 >" style = "height:50%; opacity: 0.9; margin: 1%;"></input>
+                </div>
+            </div>
+
+            <div>
+
+                <h3>DAW 란?</h3>
+
+                &nbsp;&nbsp;DAW는 Digital Audio Workstation의 약자입니다.
+
+                <h3> DAW의 종류. </h3>
+
+                <br>
+
+                <div class="DAW">
+                    <!-- div와 p 태그의 차이를 다시 생각해 보자. 여기를 p 태그로 하면 배경 색깔 적용이 불가함. 이유는??? -->
+                    <!-- <br> -->
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/69/FL_Studio_11_just_logo.png"
+                            alt="FL_Studio_11_just_logo" width="100%" height="auto">
+
+                        <figcaption>
+                            FL Studio
+                        </figcaption>
+                    </figure>
+
+                    &nbsp;&nbsp;FL Studio 는 Image-Line 사의 프로그램으로, Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점입니다.
+                    제가 가장 좋아하는 음악 프로그램 중 하나입니다. 전설적인 EDM DJ 이자, 작곡가 Avicii가 즐겨 사용했던 프로그램이기도 합니다.
+                    예전에는 장난감 같은 프로그램이라고 놀림받기도 하였지만, 실제로는 강력한 기능을 가지고 있습니다.
+                    빈 도화지에 그림을 그리는 것과 같은 느낌이라고 생각합니다. 또, 가장 좋은 점은 무료 업데이트를 지원한다는 점입니다.
+                    이게 무슨 장점이야? 라고 생각하실 수 있겠지만, 일반적으로 다른 음악 프로그램들은 새로운 버전으로 업데이트 하려면, 돈을 지불해야 하거나,
+                    업데이트 횟수가 제한되어 있습니다.
+                    <br>
+                    <br>
+                    제가 주로 사용하는 DAW인 만큼, 보다 자세하게 다루고자 합니다. 여유가 된다면, 할인 가격으로 구매하는 방법 역시 소개하고자 합니다.
+                    <br>
+                    <br>
+                    자세한 스토리가 궁금하다면, Main Menu의 DAW Tips! 를 누르세요!
+                    <br>
+                    (Side Menu가 아닙니다.)
+
+
+                    <!-- <p style="float: left; background-color: burlywood;">
+                        FL Studio 는 Image-Line 사의 프로그램으로,
+                        Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
+                        FL Studio 는 Image-Line 사의 프로그램으로,
+                        Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
+                        FL Studio 는 Image-Line 사의 프로그램으로,
+                        Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
+                        FL Studio 는 Image-Line 사의 프로그램으로,
+                        Pattern 기반의 작곡 방식을 집중적으로 지원하는 것이 큰 차별점이다.
+                    </p> -->
+                    <!-- <p style="display: inline-block;">FL studio 는 </p>
+                    <p style="display: inline-block;">테스트.</p>  -->
+
+                </div>
+
+                <div class="DAW">
+
+                    <figure style=" width: 15%; height: 20%;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/FL_Studio_Mobile_icon.png"
+                            alt="FL_Studio_Mobile_icon" width="100%" , height="auto">
+
+                        <figcaption>
+                            FL Studio mobile
+                        </figcaption>
+                    </figure>
+
+                    <div>
+                        &nbsp;&nbsp;fl studio mobile 은 앞서 소개한 FL Studio의 모바일 버전입니다. Cubasis 3와 같은 다른 모바일 음악 작곡 프로그램도
+                        사용해 보았지만, 이 프로그램 만큼 편한 것은 없다고 생각합니다. 화성악에 익숙하거나, 직접 악기를 연주하여 작곡하는 사람이라면, 다른 프로그램이 더 편할 수 있습니다.
+                        또는 일반적인 작곡 프로그램의 방식에 익숙하다면 더욱 그럴 수 있습니다.
+                        <br>
+                        <br>
+                        fl studio mobile은 역시 패턴 방식의 작곡을 지원하며, 모바일의 사용성을 고려해 더욱 직관적이고, 빠른 작업이 가능합니다.
+                        추가적인 유료 사운드 샘플을 Desktop PC버전과 비교하여 상대적으로 저렴한 가격에 제공합니다. 초기 버전은 기능이 부족한 부분도 있었지만,
+                        역시나 무료 업데이트를 통해 빠르게 개선되어 가고 있습니다.
+                        <br>
+                        <br>
+                        핸드폰으로 가볍게 작곡을 시작해 보고 싶은 분들께 추천드립니다.
+                    </div>
+                </div>
+
+                <div class="DAW">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Cakewalk_logo.png"
+                            alt="Cakewalk_logo" width="20%">
+                        <figcaption>
+                            Sonar cakewalk (now by bandlab)
+                        </figcaption>
+                    </figure>
+
+                    &nbsp;&nbsp;Sonar cakewalk 는 원래 유료 프로그램입니다. 현재는 싱가포르의 음악 관련 회사 bandlab이 가지고 있지만,
+                    예전에는 Gibson 사가 소유한 시절도 있었고, 독자적인 회사로 존재하던 시절도 있었습니다. 현재는 무료로 제공되고 있고,
+                    다시 유료 버전으로 기능을 업데이트 하여 내놓을 계획인 것으로 알고 있습니다. <br> <br>
+                    지금은 사용자가 많이 줄었지만, 과거에는 매우 유명했던 영광의 시절도 있다고 들었습니다. 저는 혼자서 작곡을 처음 시작할 때,
+                    무료인 부분에 끌려서 사용하였던 프로그램입니다. window 버전만 제공하기 때문에, mac os 사용자는 사용을 할 수 없다는 것이 아쉽습니다.
+                    사용법은 저에게는 좀 어려웠습니다. 처음 사용했어서 그런 것도 있겠지만, 전통적인 DAW의 느낌입니다. 중간에 회사의 인수 등,
+                    힘든 시간이 있어서 그런지, 최적화가 덜 되어있다는 느낌을 받았습니다. 그래도 프로 수준의 퀄리티는 여전히 유지하고 있으며, Pro Channel 이라는
+                    channel strip 기능을 제공합니다. 트랙에 빠르게 효과를 적용하기 좋은 것 같습니다.
+
+                </div>
+
+                <div class="DAW">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/REAPER_DAW_logo.jpg"
+                            alt="REAPER_DAW_logo" width="20%">
+                        <figcaption>
+                            REAPER by Cockos
+                        </figcaption>
+                    </figure>
+
+                    &nbsp;&nbsp;REAPER는 강력하면서도 가벼운 DAW라고 할 수 있을 것 같습니다. 여기서 가볍다는 것은 기능이 빈약하다는 이야기가 아닙니다.
+                    프로그램의 기본적인 설치 용량이 작다는 의미입니다. 그래서, 이 프로그램을 USB에 넣어서 간편하게 다닌다는 사람들도 있습니다.
+                    REAPER는 커스터마이징 자유도가 높습니다. 유튜브에서 REAPER theme으로 검색하면, 다른 DAW에서는 상상하기 힘든 자유도를 보여줍니다.
+                    유료이기는 하지만, 정가 기준으로 $225 이고, 이 프로그램을 사용해서 얻는 소득이 일정 기준 이하 이거나, 돈을 벌기 위한 것이 아닌 개인적인
+                    사용 기준으로는 $60 의 매우 저렴한 가격으로 구매가 가능합니다.
+                    <br>
+                    <br>
+                    DAW에 처음 입문한다면, REAPER로 시작하라는 말도 있습니다.
+                    그런데, 제가 생각하기에는, 초보자가 느끼기에 어려워 할 것 같습니다.
+                    <br>
+                    <br>
+                    기본 제공되는 플러그인 외에, 사용자가 직접 필요한 플러그인을 구해야하는 필요성이 있을 것으로 예상됩니다.
+
+                </div>
+
+                <div class="DAW">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Logic_Pro_icon.png"
+                            alt="Logic_Pro_icon" width="20%">
+                        <figcaption>
+                            Logic Pro
+                        </figcaption>
+                    </figure>
+
+                    &nbsp;&nbsp;Logic Pro 는 mac os 에서만 사용할 수 있는 음악 프로그램 입니다. 과거에는, Logic Pro X로 불리기도 했습니다.
+                    mac os를 사용하는 기기의 각격이 높아서 문제지, DAW 자체의 가격은 괜찮은 편입니다. mac os 기기 전용인 만큼,
+                    mac os에서 부드러운 작동을 보여줍니다. 내장 sample들의 퀄리티가 좋다는 평이 있습니다. 역시 프로 수준의 기능들을 제공하고 있습니다.
+                    많은 뮤지션들이 사용하는 프로그램 중 하나입니다.
+                    <br>
+                    <br>
+                    EDM 프로듀서 중 Logic Pro를 사용하는 뮤지션으로는 Zedd와 Kygo를 뽑을 수 있겠습니다.
+                    Zedd는 Clarity와 Stay 등의 명곡이 있고, Kygo는 Firestone, It ain't me 라는 히트곡이 있습니다.
+                    <br>
+                    <br>
+                    애플에서 애플 기기 사용자에게 무료로 제공하는 게러지 밴드와 약간 비슷한 디자인을 가지고 있습니다.
+
+                </div>
+
+                <!-- <div class="DAW">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Cubase_logo.svg/2880px-Cubase_logo.svg.png"
+                            alt="Cubase_logo" width="20%">
+                        <figcaption>
+                            CUBASE by Steinberg
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="DAW">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/50/PreSonus_Studio_One_Logo.png"
+                            alt="PreSonus_Studio_One_Logo" width="20%">
+                        <figcaption>
+                            Studio one by PreSonus
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="DAW">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Antu_bitwig-studio.svg/1920px-Antu_bitwig-studio.svg.png"
+                            alt="Antu_bitwig-studio" width="20%">
+                        <figcaption>
+                            Bitwig Studio
+                        </figcaption>
+                        ??????/
+                    </figure>
+
+                </div> -->
+
+            </div>
+
+        </article>
+
+        <article id="about_laptop">
+
+            <div>
+
+                <div class="title_shadow">
+                    <div style="display: inline-block; grid-area: title_1;">
+                        <h2>| 노트북에 관하여.</h2>
+                    </div>
+                    <div style="display: inline-block; grid-area: title_2; align-items: center;">
+                        <input type="button" onclick="window.open('./about_laptop!.html', '_self')"
+                            title="About Laptop! 페이지로 이동!" value="자세히 알아보기 >" style = "height:50%; opacity: 0.9; margin: 1%;"></input>
+                    </div>
+                </div>
+
+                <div class="notebook">
+
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Apple_M1.jpg" alt="Apple_M1"
+                            width="20%">
+                        <figcaption>
+                            Apple Silicon M Series.
+                        </figcaption>
+                    </figure>
+
+                    <div>
+
+                        &nbsp;&nbsp; Apple 은 2020년 말에 M1 칩을 공개하였습니다. 원래는 intel cpu를 MacBook에 탑재하였는데, 이제는 자체적으로
+                        칩을 디자인하기 시작했습니다. x86이 아닌 arm 기반의 아키텍쳐를 사용합니다. M1 칩 부터 엄청난 전성비를 자랑합니다.
+                        특히나, M1은 발열이 적은 것으로 유명합니다.
+                        <br>
+                        <br>
+                        현재는 M1, M2, M3, M4 까지 해서, M4가 출시되었습니다. 물론, M1 pro 등, 세부적인 칩이 존재합니다. 제가, cpu가 아니라 '칩'
+                        이라고 부르는 이유는, 칩 내부에 cpu, gpu, npu 등등의 부분들이 모두 통합되어 있는, 통합 칩이기 때문입니다.
+                        일반적으로 노트북을 보면, 내장 그래픽, 외장 그래픽으로 나뉘기도 하고, 보통은 칩 1개에 전부 넣는 경우는 상대적으로 별로 없는 것으로
+                        알고 있습니다. 모바일 칩 빼고요.
+                        <br>
+                        <br>
+                        ram 까지 칩 내부에 통합되어 있는 점은 장단점이 있겠지만, 아쉽게 느껴집니다. 애플의 ram 업그레이드 옵션 가격이 적당히 사악해야 말이죠.
+                        <br>
+                        <br>
+                        저는 올해 중순에 노트북을 맥북에어로 바꿨습니다. mac os를 태어나서 처음 사용해 보았습니다. 이전까지 window os만 사용하여서,
+                        조금 불편한 부분은 있었지만, 매우 만족하고 있습니다. 그래서 맥북 에어의 장단점에 대해서도, 소개를 하고자 합니다.
+                        자세한 내용이 궁금하다면, Main Menu의 About Laptop! 을 누르거나, 더보기 버튼을 누르세요! <br>
+                        (Side Menu 가 아닙니다.)
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <hr>
+    </section>
+
+    <!-- ############################################################################################################## -->
+
+    <!-- ############################################################################################################## -->
+
+    <aside>
+
+        <hr>
+
+        For more story...
+
+        <hr>
+
+        <!-- <input type="button" onclick="alert(current_iframe_src)"> -->
+
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+            alt="Python-logo-notext" width="100%"> -->
+
+
+        <fieldset>
+
+            <legend>Python</legend>
+
+            <input type="image" src="./images/Python-logo-notext.svg.png" alt="Python-logo-notext" width="100%"
+                onclick="window.open('https://www.python.org/', '_blank')" title="파이썬 공식 페이지로 가기!">
+
+            <!-- <img src="./images/Python-logo-notext.svg.png" alt="Python-logo-notext" width="100%"> -->
+
+            <br>
+            Life is too short!
+            <br>
+            You need Python!
+        </fieldset>
+
+        <fieldset>
+
+            <legend>HTML5</legend>
+
+            <img src="./images/HTML5_logo_and_wordmark.svg.png" alt="HTML5_logo_and_wordmark" width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>CSS3</legend>
+
+            <img src="./images/CSS3_logo_and_wordmark.svg.png" alt="CSS3_logo_and_wordmark" width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>JavaScript</legend>
+
+            <img src="./images/Unofficial_JavaScript_logo_2.svg.png" alt="Unofficial_JavaScript_logo_2" width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Java</legend>
+
+            <img src="./images/Java_programming_language_logo.svg.png" alt="Java_programming_language_logo"
+                width="100%">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>C</legend>
+
+            <img src="./images/The_C_Programming_Language_logo.svg.png" alt="The_C_Programming_Language_logo"
+                width="100%">
+
+        </fieldset>
+
+        <hr>
+
+    </aside>
+
+    <!-- </div> -->
+
+</body>
+
+</html>
